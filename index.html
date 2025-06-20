@@ -436,7 +436,7 @@
 
             .hero-enhanced {
                 padding: 3rem 0; /* Adjusted from 4rem */
-                text-align: center;
+                /* Removed text-align: center; as it's now handled by Tailwind on child elements */
             }
 
             .btn-primary {
@@ -638,7 +638,7 @@
                 </div>
 
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 p-2 rounded-md focus:outline-none cursor-pointer">
                         <i data-lucide="menu" class="h-6 w-6"></i>
                     </button>
                 </div>
@@ -667,16 +667,13 @@
                             <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
                             <span class="text-sm font-medium text-gray-700">📈 Ready to Team Up!</span>
                         </div>
-                        <!-- MODIFIED: Changed text-left to text-center for small screens, keeping lg:text-left for large screens -->
                        <h1 class="mb-6 font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center lg:text-left">
                             Reclaim Your Focus.
                             <span style="color: var(--primary-pink);">Scale Your Business.</span>
                         </h1>
-                        <!-- MODIFIED: Changed text-left to text-center for small screens, keeping lg:text-left for large screens -->
                         <p class="text-xl text-gray-600 mb-8 leading-relaxed font-medium text-center lg:text-left">
                             As a strategic operations and creative partner, I free visionary CEOs, founders, and business owners from daily operational burdens. I streamline your systems and amplify your brand, enabling you to reclaim critical time, ignite innovation, and <strong class="text-pink-600">boost your profits by 40-60%</strong>.
                         </p>
-                        <!-- MODIFIED: Changed sm:justify-center to justify-center to center buttons on extra-small screens too -->
                         <div class="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
                             <a href="#contact" class="btn-primary btn-urgent">
                                 <i data-lucide="calendar" class="mr-2 h-5 w-5"></i>
